@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -8,6 +9,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
+  font-family: Nunito, "sans-sarif";
 }
 
 /* Video Background */
@@ -44,6 +46,7 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .input-container {
@@ -77,7 +80,11 @@ input {
   background: #fff;
   outline: none;
 }
-
+input:focus {
+  outline: 5px solid red;
+  font-family: Nunito, "sans-serif";
+  font-size: 50px;
+}
 /* Button */
 button {
   width: 100%;
@@ -90,6 +97,9 @@ button {
   color: white;
   cursor: pointer;
   outline: none;
+}
+button:hover {
+  filter: brightness(110%);
 }
 
 /* Countdown */
@@ -130,6 +140,8 @@ li span {
   }
 
   .container {
+    min-width: unset;
+    width: 95vw;
     min-height: 245px;
     padding: 20px;
     margin: 10px;
